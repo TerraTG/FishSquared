@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="FishResource" format=3 uid="uid://cobydl4nlc6tj"]
 
 [ext_resource type="Script" uid="uid://bv0tgrfyk38hs" path="res://scripts/resourceScripts/fishResource.gd" id="1_08pse"]
+[ext_resource type="Texture2D" uid="uid://bj6pr6rocmi33" path="res://sprites/CommonSprite.png" id="2_2nws7"]
 
 [resource]
 script = ExtResource("1_08pse")
+texture = ExtResource("2_2nws7")
 name = "Rock Fish"
 rarity = "Common"
-speed = 5.0
-resistance = 0.5
+speed = 1.5
+resistance = 1.75
 shake_amount = 5
 metadata/_custom_type_script = "uid://bv0tgrfyk38hs"
