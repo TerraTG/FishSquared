@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://clcqdbrbu2cw3"]
+
+[ext_resource type="Script" uid="uid://c0usku6ca37of" path="res://scripts/main.gd" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://cjr7cv167oddy" path="res://scenes/shake_button.tscn" id="2_0wfyh"]
+[ext_resource type="Resource" uid="uid://b856ld8wxo66x" path="res://resources/fishlistlists/areaList.tres" id="2_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://dlhe7g5l7qmsw" path="res://scenes/reeling_minigame.tscn" id="3_sugp2"]
+
+[node name="Main" type="Node2D" unique_id=689523077]
+script = ExtResource("1_o5qli")
+mainList = ExtResource("2_jyhfs")
+button_prefab = ExtResource("2_0wfyh")
+reeling_minigame_prefab = ExtResource("3_sugp2")
+
+[node name="SpawnBox" type="Control" parent="." unique_id=638149787]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 188.0
+offset_top = 94.0
+offset_right = 914.0
+offset_bottom = 504.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CastButton" type="Button" parent="." unique_id=1858109919]
+offset_left = 438.0
+offset_top = 588.0
+offset_right = 704.0
+offset_bottom = 624.0
+text = "Cast"
+
+[node name="Buttons" type="Node" parent="." unique_id=305854053]
+
+[connection signal="pressed" from="CastButton" to="." method="_on_button_pressed"]

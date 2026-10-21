@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://dlhe7g5l7qmsw"]
+
+[ext_resource type="Script" uid="uid://3737hnjoqb1w" path="res://scripts/reeling_minigame.gd" id="1_mdegw"]
+
+[node name="ReelingMinigame" type="Node2D" unique_id=627554978]
+
+[node name="Control" type="Control" parent="." unique_id=667234909]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("1_mdegw")
+
+[node name="BarBackground" type="ColorRect" parent="Control" unique_id=232617366]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -452.0
+offset_top = -125.0
+offset_right = 412.0
+offset_bottom = -85.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0, 0, 0, 0.4)
+
+[node name="ControlBar" type="ColorRect" parent="Control" unique_id=199951433]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -156.0
+offset_top = -125.0
+offset_right = 116.0
+offset_bottom = -85.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="FishIcon" type="ColorRect" parent="Control" unique_id=37809660]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -125.0
+offset_bottom = -85.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.14299694, 0.47490674, 0.6848423, 1)
+
+[node name="ProgressBar" type="ProgressBar" parent="Control" unique_id=1527839582]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -354.0
+offset_top = -163.0
+offset_right = 314.0
+offset_bottom = -136.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Marker2D" type="Marker2D" parent="Control" unique_id=1776220955]
+position = Vector2(576, 648)

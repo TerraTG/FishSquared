@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://cjr7cv167oddy"]
+
+[ext_resource type="Script" uid="uid://dp7p67p0vd1rn" path="res://scripts/shake_button.gd" id="1_vijpf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g4v7s"]
+bg_color = Color(0, 0, 0, 0.3882353)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 21
+corner_radius_top_right = 21
+corner_radius_bottom_right = 21
+corner_radius_bottom_left = 21
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vijpf"]
+bg_color = Color(0.71462905, 0.71462905, 0.71462893, 0.3882353)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 21
+corner_radius_top_right = 21
+corner_radius_bottom_right = 21
+corner_radius_bottom_left = 21
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d065a"]
+bg_color = Color(0.3172787, 0.31727865, 0.31727865, 0.3882353)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 21
+corner_radius_top_right = 21
+corner_radius_bottom_right = 21
+corner_radius_bottom_left = 21
+
+[node name="Button" type="Button" unique_id=1892558988]
+offset_left = -90.0
+offset_top = -90.0
+offset_right = -45.0
+offset_bottom = -45.0
+scale = Vector2(2, 2)
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_g4v7s")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vijpf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_d065a")
+text = "Shake"
+script = ExtResource("1_vijpf")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
