@@ -16,6 +16,8 @@ var begin = false
 #stat values
 var resistance: float
 var speed
+var min_move
+var max_move
 
 func _ready() -> void:
 	progress_bar.value = Global.catch_meter
@@ -60,8 +62,8 @@ func gravity_handler():
 	control_bar.position.x -= velocity
 
 func handle_ai():
-	var move_left = randi_range(-250, -75)
-	var move_right = randi_range(75, 250)
+	var move_left = randi_range(-max_move, -min_move)
+	var move_right = randi_range(min_move, max_move)
 	can_fish_move = false
 	
 	
