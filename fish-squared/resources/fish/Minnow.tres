@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="FishResource" format=3 uid="uid://btx6nsk3ag280"]
+
+[ext_resource type="Script" uid="uid://bv0tgrfyk38hs" path="res://scripts/resourceScripts/fishResource.gd" id="1_p0b48"]
+[ext_resource type="Texture2D" uid="uid://bj6pr6rocmi33" path="res://sprites/CommonSprite.png" id="2_2ytsc"]
+
+[resource]
+script = ExtResource("1_p0b48")
+texture = ExtResource("2_2ytsc")
+name = "Minnow"
+rarity = "Common"
+speed = 1.75
+resistance = 1.25
+shake_amount = 6
+move_min = 75.0
+move_max = 100.0
+value_per_kg = 12.5
+min_weight = 0.15
+max_weight = 2.5
+metadata/_custom_type_script = "uid://bv0tgrfyk38hs"

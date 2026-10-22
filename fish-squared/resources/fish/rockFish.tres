@@ -6,6 +6,7 @@
 [resource]
 script = ExtResource("1_08pse")
 texture = ExtResource("2_2nws7")
+tooltip = "\"A fish made entirely out of rock, I\\ndon't think you can eat it.\""
 name = "Rock Fish"
 rarity = "Common"
 speed = 1.5

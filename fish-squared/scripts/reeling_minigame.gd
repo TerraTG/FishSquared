@@ -99,10 +99,10 @@ func handle_ai():
 
 func check_if_hit_edge() -> String:
 	if (fish_icon.position.x > bar_background.position.x):
-		return "None"
+		if fish_icon.position.x + fish_icon.size.x < (bar_background.position.x + bar_background.size.x) - 10:
+			return "None"
+		else:
+			return "Right"
 	else:
 		return "Left"
-	if fish_icon.position.x + fish_icon.size.x < (bar_background.position.x + bar_background.size.x) - 10:
-		return "None"
-	else:
-		return "Right"
+	

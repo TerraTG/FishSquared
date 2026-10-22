@@ -3,8 +3,9 @@
 [ext_resource type="Script" uid="uid://cnb433o81skyo" path="res://scripts/resourceScripts/fishList.gd" id="1_dnrbe"]
 [ext_resource type="Script" uid="uid://bv0tgrfyk38hs" path="res://scripts/resourceScripts/fishResource.gd" id="1_syjs4"]
 [ext_resource type="Resource" uid="uid://cobydl4nlc6tj" path="res://resources/fish/rockFish.tres" id="2_oxew8"]
+[ext_resource type="Resource" uid="uid://btx6nsk3ag280" path="res://resources/fish/Minnow.tres" id="3_0j660"]
 
 [resource]
 script = ExtResource("1_dnrbe")
-list = Array[ExtResource("1_syjs4")]([ExtResource("2_oxew8")])
+list = Array[ExtResource("1_syjs4")]([ExtResource("2_oxew8"), ExtResource("3_0j660")])
 metadata/_custom_type_script = "uid://cnb433o81skyo"

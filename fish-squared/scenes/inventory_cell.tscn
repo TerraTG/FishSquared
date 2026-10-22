@@ -1,11 +1,16 @@
 [gd_scene format=3 uid="uid://diq83ijob6h6u"]
 
+[ext_resource type="Script" uid="uid://dg8kwrc2kyqxr" path="res://scripts/inventory_cell.gd" id="1_qspu0"]
+
 [node name="InventoryCell" type="Button" unique_id=1057469160]
 custom_minimum_size = Vector2(100, 100)
 offset_right = 100.0
 offset_bottom = 100.0
+focus_mode = 1
+focus_behavior_recursive = 2
 text = "q
 "
+script = ExtResource("1_qspu0")
 
 [node name="WeightLabel" type="Label" parent="." unique_id=1823978015]
 layout_mode = 1
@@ -20,7 +25,10 @@ offset_right = -3.0
 offset_bottom = -2.0
 grow_horizontal = 0
 grow_vertical = 0
-theme_override_font_sizes/font_size = 8
+theme_override_font_sizes/font_size = 12
 text = "x.xx kg"
 horizontal_alignment = 2
 vertical_alignment = 2
+
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
